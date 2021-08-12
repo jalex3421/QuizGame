@@ -3,6 +3,6 @@
 
 Description: A little quiz game using HTML , PHP, CSS , JavaScript and MongoDB. 
 The questions from the quiz  game could be easily changed in the JavaScript file. 
-By default questions are from anime shows
+By default questions are from anime shows.
 
 Requirements: mongoDB compass , XAMPP
