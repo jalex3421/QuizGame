@@ -1,0 +1,51 @@
+<!-- Author: Alejandro Meza Tudela
+     Purpose: Play trivia Game-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-Trivia</title>
+    <link href="style_trivia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script defer src="game_logic.js"></script>
+    <script>
+        $(document ).ready(function() {
+            alert( "login succesfuull ^^" );
+        });
+    </script>
+</head>
+<body>
+    <!-- Container of the questions  -->
+    <div class="container">
+        <!-- Cool header  -->
+        <div class="w3-container w3-gray">
+            <h1>##username## is ready to play!!</h1>
+        </div>
+        <!-- At first the questions are hidden  -->
+        <div  id = "question-container" class="hide">
+            <div  id = "question" class = "question">  Question </div>
+            <div  id = "answer-buttons" class = "btn-grid">
+                <button class="btn" > Answer 1  </button>
+                <button class="btn" > Answer 2  </button>
+                <button class="btn" > Answer 3  </button>
+                <button class="btn" > Answer 4  </button>
+            </div>
+            <!-- Control stuff  -->
+        </div >
+        <div  class = "controls">
+            <button id = "start-btn" class="start-btn btn" > Start The Game ^^ </button>
+            <button id = "next-btn" class="next-btn btn hide" > Next </button>
+            <!-- Send Score Form -->
+            <form id = "form-send" action="play_trivia.php"  method="post" class="hide">
+                <input  type="hidden" name="name" id="name" value="##username##">
+                <input  type='hidden' name="number_input" id='number_input'>
+                <button type="submit" value="Send" class = "btn">SEND SCORE</button>
+            </form>
+        </div >
+        <span id="right-answers"> <b>Your score will be here uwu </b></span>
+        <span id="number-questions"> <b> </b></span>
+    </div >
+</body>
+</html>

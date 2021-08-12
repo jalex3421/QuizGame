@@ -1,0 +1,38 @@
+<!-- Author: Alejandro Meza Tudela
+     Purpose: Show the trivia-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RANKING</title>
+    <link href="ranking.css" rel="stylesheet">
+    <script> function previousTap(){
+        window.history.back();
+    }
+    function goBackMenu(){
+        location.href = "index.html"
+    }
+    </script>
+</head>
+
+
+<body>
+
+<h1>RANKING</h1>
+
+<table id="players">
+    <th>Username</th>
+    <th>Score</th>
+    ##rows##
+        <tr>
+            <td>##username##</td>
+            <td>##score##</td>
+        </tr>
+    ##rows##
+</table>
+
+<button id = "play_again-btn" onclick="previousTap()"> Play Again! </button>
+<button id = "main-btn" onclick="goBackMenu()" > Main Page </button>
+
+</body>
+</html>
