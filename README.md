@@ -5,4 +5,4 @@
 The questions from the quiz  game could be easily changed in the JavaScript file. 
 By default questions are from anime shows.
 
-*Requirements*: mongoDB compass , XAMPP
+*Requirements*: mongoDB compass (Create BD called 'Trivia' and add an empty collection 'usernames'), XAMPP
