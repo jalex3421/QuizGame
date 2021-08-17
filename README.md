@@ -6,3 +6,5 @@ The questions from the quiz  game could be easily changed in the JavaScript file
 By default questions are from anime shows.
 
 *Requirements*: mongoDB compass (Create DB called 'Trivia' and add an empty collection 'usernames'), XAMPP
+
+*Screenshots*: check --> QuizGame_AlejandroMeza_ScreenShots.pdf
